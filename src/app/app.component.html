@@ -1,0 +1,33 @@
+<div class="container">
+  <div style="text-align:center">
+    <h1>
+      Nova Zelândia
+    </h1>
+    <p class="text-center">
+      Este projeto pode ser mais complicado do que parece. Olhe em volta com cuidado.
+      O que você vê? O céu é azul, a grama é verde. O sol brilha através da janela.
+    </p>
+  </div>
+
+  <div class="row">
+    <img class="img-responsive" id="circle" src="/imagens/1-lake-mountain.jpg" alt="Lake Mountain" (click)="openModal(1)"
+      #img1 />
+    <img class="img-responsive" id="rectangle" src="/imagens/2-lake-auckland.jpg" alt="Lake Auckland" (click)="openModal(2)"
+      #img2 />
+
+  </div>
+
+  <div class="aling row">
+    <img class="img-responsive" id="square" src="/imagens/3-doubtful-sound.jpg" alt="Doubtful Sound" (click)="openModal(3)"
+      #img3 />
+    <img class="img-responsive" id="triangle" src="/imagens/4-sunrise-beach.jpg" alt="Sunrise Beach" (click)="openModal(4)"
+      #img4 />
+  </div>
+
+  <div id="windowModal" class="modal-view" #windowModal>
+    <span class="close" (click)="closeModal()" #close>X</span>
+    <h1 id="txtImg">{{ textImg }}</h1>
+    <img class="modal-content" id="imgModal" #imgModal />
+  </div>
+
+</div>
